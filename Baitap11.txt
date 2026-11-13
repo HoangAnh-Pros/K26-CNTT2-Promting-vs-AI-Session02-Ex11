@@ -1,0 +1,5 @@
+Bài 11: Chuỗi Pipeline Trích xuất Đánh giá Nhà cung cấp Dạng JSON Schema.
+Vấn đề : Techshop cần 1 promt nạp tự động biên bản này và xuất ra 1 đối tượng JSON chuẩn xác để hệ thống phần mềm tự động nạp vào data base quản lý nhà cung cấp
+Yêu cầu : - Xây dựng Master promt trích xuất.
+          - Biên soạn văn bản mẫu và test OutPut.
+Giải quy
