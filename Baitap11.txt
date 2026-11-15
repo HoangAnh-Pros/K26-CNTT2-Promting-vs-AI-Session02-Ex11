@@ -2,4 +2,35 @@ Bài 11: Chuỗi Pipeline Trích xuất Đánh giá Nhà cung cấp Dạng JSON 
 Vấn đề : Techshop cần 1 promt nạp tự động biên bản này và xuất ra 1 đối tượng JSON chuẩn xác để hệ thống phần mềm tự động nạp vào data base quản lý nhà cung cấp
 Yêu cầu : - Xây dựng Master promt trích xuất.
           - Biên soạn văn bản mẫu và test OutPut.
-Giải quy
+Giải quyết vấn đề : 
+Phần 1 : xây dựng Master promt trích xuất :
+Đọc biên bản cuộc họp bên dưới và điền thông tin vào định dạng JSON chính xác theo mẫu này:
+{
+  "vendor_name": "Tên nhà cung cấp",
+  "discount_rate": Số phần trăm chiết khấu (ví dụ: 12.5),
+  "payment_term_days": Số ngày công nợ,
+  "supports_rma_direct": true hoặc false,
+  "core_product_lines": ["Mặt hàng 1", "Mặt hàng 2"],
+  "risk_assessment": "Low, Medium hoặc High"
+}
+
+--> Chỉ trả về đoạn mã JSON thuần túy, không viết thêm chữ nào khác.
+
+Biên bản:
+[DÁN NỘI DUNG BIÊN BẢN VÀO ĐÂY]
+Phần 2 : Biên soạn văn bản mẫu và test OutPut.
+- Test Output:
+{
+  "vendor_name": "Công ty Cổ phần Thương mại và Công nghệ Viễn Thông Tân Phát",
+  "discount_rate": 14.5,
+  "payment_term_days": 45,
+  "supports_rma_direct": true,
+  "core_product_lines": [
+    "CPU",
+    "Mainboard",
+    "Ổ cứng SSD/HDD",
+    "RAM"
+  ],
+  "risk_assessment": "Low"
+}
+
